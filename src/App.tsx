@@ -7,12 +7,12 @@ const sampleData: ITodo[] = [
   {
     id: 1,
     content: "⚽️ 축구하기",
-    isDone: false,
+    isDone: true,
   },
   {
     id: 2,
-    content: "🏓 탁구하기",
-    isDone: false,
+    content: "🇺🇸 미국가기",
+    isDone: true,
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const App: FC = () => {
   return (
     <Flex flexDir="column" minH="100vh">
       <CreateTodo todos={todos} setTodos={setTodos} />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} setTodos={setTodos} />
     </Flex>
   );
 };
